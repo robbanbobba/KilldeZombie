@@ -1,0 +1,17 @@
+{
+    "name": "fed23-api-chat",
+    "version": "1.0.0",
+    "description": "FED23 API Chat",
+    "main": "index.js",
+    "scripts": {
+        "install": "cd frontend && npm install --include=dev && cd ../backend && npm install --include=dev",
+        "build": "cd frontend && npm run build && cd ../backend && npm run build",
+        "start": "cd backend && npm start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "vite": "^5.2.10"
+    }
+}

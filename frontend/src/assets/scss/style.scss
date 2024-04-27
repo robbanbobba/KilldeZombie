@@ -1,0 +1,68 @@
+@import 'bootstrap/scss/bootstrap';
+
+#app.text-white.vh-100 {
+	background-image: url("/frontend/images/backgroundImage.jpeg") !important;
+	/* background-color: red; */
+	background-size: contain;
+}
+
+#interactive-area {
+    display: grid;
+    grid-template-columns: repeat(4, 8rem); /* 4 columns */
+    grid-template-rows: repeat(4, 8rem); /* 4 rows */
+    gap: 5px; /* Gap between squares */
+    cursor: crosshair;
+    margin-top: 100px !important;
+}
+#interactive-square{
+    background-color: #ccc; /* Background color */
+    border: 1px solid #999; /* Border color */
+    cursor: crosshair;
+}
+#scoreboard {
+    margin-top: 100px;
+}
+
+
+@media screen and (max-width: 991px) and (min-width: 701px) {
+    #interactive-area {
+        grid-template-columns: repeat(4, 6rem); /* 4 columns */
+        grid-template-rows: repeat(4, 6rem); /* 4 rows */
+        gap: 0px;
+    }
+    #interactive-square{
+        width: 6rem;
+        height: 6rem;
+    }
+    #scoreboard {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #interactive-area {
+        grid-template-columns: repeat(4, 6rem); /* 4 columns */
+        grid-template-rows: repeat(4, 6rem); /* 4 rows */
+        gap: 0px;
+        margin-top: 0px !important;
+    }
+    #interactive-square{
+        width: 6rem;
+        height: 6rem;
+    }
+    #gameContainer {
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    #scoreboard {
+        margin: 20px;
+        margin-top: 20px;
+        width: 24 rem;
+    }
+
+    #storyLine {
+        margin: 8px;
+    }
+
+}
+
